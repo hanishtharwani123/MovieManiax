@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieManiax - The Home of Movie Trailers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <span class="logo">MovieManiax</span>
+        <div class="search-input">
+            <i class="fa fa-magnifying-glass" id="search-icon"></i>
+            <input type="text" class="search-text" placeholder="Search Movie trailers">
+        </div>
+        <div class="pro">
+            <div class="about-me">
+                <img src="images/my-pic.jpg" class="my">
+                <span class="name-my">Hanish Tharwani</span>
+            </div>
+            <div class="mode">
+                <span class="mode-name">Light mode</span>
+                <img src="images/sun.png" id="dark-mode">
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <video src="jurasic world (online-video-cutter.com).mp4" autoplay muted loop id="video_main"></video>
+        <div class="about_play">
+            <span class="video_name">Jurassic World</span>
+            <span class="video_about">Owen (Chris Pratt) and Claire (Bryce Dallas Howard) race to restore order at
+                Jurassic World theme park when a ferocious genetically modified dinosaur escapes.</span>
+            <div class="video_info">
+                <span class="imdb">IMDb 6.9</span>
+                <span class="time">2 h 5 min</span>
+                <span class="year">2015</span>
+            </div>
+            <span class="fiction">Science Fiction
+                ·
+                Action
+                ·
+                Bold
+                ·
+                Eerie</span>
+            <div class="play_btn">
+                <i class="fa fa-duotone fa-play" id="play" onclick="playTrailer('trailer/jauraic.mp4')"></i>
+                <span class="play_trailer">Play Trailer</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sections">
+        <span class="trending">Trending</span>
+        <div class="box">
+            <div class="card">
+                <img src="images/kgf.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/kgf.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/kgf2.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">K.G.F Chapter 2 (Hindi)</span>
+                        <div class="movie-time">
+                            <span class="year1">2022</span>
+                            <span class="hour">2 h 45 min</span>
+                            <span class="UA">U/A 13+</span>
+                        </div>
+                        <span class="about-movie-video">Vijendra ingalgi, Son of Anand ingalgi continues the story of
+                            KGF
+                            and Rocky in Chapter 2. Rocky...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/tgm.webp" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/tgm.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/tgm.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Top Gun: Maverick</span>
+                        <div class="movie-time">
+                            <span class="year1">2022</span>
+                            <span class="hour">2 h 10 min</span>
+                            <span class="UA">U/A 16+</span>
+                        </div>
+                        <span class="about-movie-video">
+                            After thirty years, Maverick (Tom Cruise) is still pushing the envelope as a top naval
+                            aviator, but must...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/sher.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/sher.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1"
+                                onclick="playTrailer('trailer/shershah.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Shershaah</span>
+                        <div class="movie-time">
+                            <span class="year1">2021</span>
+                            <span class="hour">2 h 15 min</span>
+                            <span class="UA">U/A 13+</span>
+                        </div>
+                        <span class="about-movie-video">The film Shershaah is the story of PVC awardee brave Indian
+                            soldier Capt. Vikram Batra, whose...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/Drishyam-2.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/drishyam.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1"
+                                onclick="playTrailer('trailer/drishyam.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Drishyam 2 (Hindi)</span>
+                        <div class="movie-time">
+                            <span class="year1">2022</span>
+                            <span class="hour">2 h 19 min</span>
+                            <span class="UA">U/A 13+</span>
+                        </div>
+                        <span class="about-movie-video">Seven years after the case related to vijay and his family was
+                            closed, a series of unexpected events brings...</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="sections">
+        <span class="trending">Latest</span>
+        <div class="box">
+            <div class="card">
+                <img src="images/farzi.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/farzi.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/farzi.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Farzi</span>
+                        <div class="movie-time">
+                            <span class="year1">2023</span>
+                            <span class="hour">8 episodes</span>
+                            <span class="UA">U/A 13+</span>
+                        </div>
+                        <span class="about-movie-video">Sunny, a brilliant small-time artist is catapulted into the
+                            high-stakes world of counterfeitin...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/jack.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/jack.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/jack.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Jack Ryan</span>
+                        <div class="movie-time">
+                            <span class="year1">2022</span>
+                            <span class="hour">8 episodes</span>
+                            <span class="UA">U/A 16+</span>
+                        </div>
+                        <span class="about-movie-video">In Season 3 of Tom Clancy’s Jack Ryan, Jack races against time
+                            and across Europe to stop...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/varisu.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/varisu.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/varisu.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Varisu</span>
+                        <div class="movie-time">
+                            <span class="year1">2023</span>
+                            <span class="hour">2 h 49 min</span>
+                            <span class="UA">U/A 16+</span>
+                        </div>
+                        <span class="about-movie-video">
+
+                            Vijay, the prodigal son of business tycoon Rajendran agrees to take over the reins of the
+                            business, much to...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/phoneb.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/phoneb.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/phone.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Phone Bhoot</span>
+                        <div class="movie-time">
+                            <span class="year1">2022</span>
+                            <span class="hour">2 h 15 min</span>
+                            <span class="UA">U/A 13+</span>
+                        </div>
+                        <span class="about-movie-video">Two crazy, jobless, horror-film addicts Major and Gullu, under
+                            immense family pressure to find work...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sections">
+        <span class="trending">Popular</span>
+        <div class="box">
+            <div class="card">
+                <img src="images/mirzapur.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/mirzapur.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1"
+                                onclick="playTrailer('trailer/mirzapur2.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Mirzapur</span>
+                        <div class="movie-time">
+                            <span class="year1">2020</span>
+                            <span class="hour">10 episodes</span>
+                            <span class="UA">U/A 16+</span>
+                        </div>
+                        <span class="about-movie-video">
+                            In Mirzapur, revenge runs darker than blood. There is one title, the King of Mirzapur, but
+                            many takers...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/pushpa.webp" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/pushpa.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/pushpa.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Pushpa: The Rise</span>
+                        <div class="movie-time">
+                            <span class="year1">2022</span>
+                            <span class="hour">2 h 55 min</span>
+                            <span class="UA">U/A 13+</span>
+                        </div>
+                        <span class="about-movie-video">Pushpa Raj (Allu Arjun) a coolie, volunteers to smuggle red
+                            sanders, a rare wood that only grows in Andhra...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/panchyat.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/panchayat.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1"
+                                onclick="playTrailer('trailer/panchayat2.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Panchayat</span>
+                        <div class="movie-time">
+                            <span class="year1">2022</span>
+                            <span class="hour">8 episodes</span>
+                            <span class="UA">U/A 13+</span>
+                        </div>
+                        <span class="about-movie-video">
+                            With the rise of an opponent against Pradhan Ji, village politics of Phulera heats up.
+                            Unable...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/the.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/the.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1"
+                                onclick="playTrailer('trailer/tommorow.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">The Tomorrow War</span>
+                        <div class="movie-time">
+                            <span class="year1">2021</span>
+                            <span class="hour">2 h 18 min</span>
+                            <span class="UA">U/A 16+</span>
+                        </div>
+                        <span class="about-movie-video">
+                            Time travelers arrive from 2051 to deliver an urgent message: 30 years in the future mankind
+                            is losing a...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sections">
+        <span class="trending">Horror</span>
+        <div class="box">
+            <div class="card">
+                <img src="images/conjuring.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/conjuring.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/conj2.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">The Conjuring 2</span>
+                        <div class="movie-time">
+                            <span class="year1">2016</span>
+                            <span class="hour">2 h 13 min</span>
+                            <span class="UA">U/A 16+</span>
+                        </div>
+                        <span class="about-movie-video">Renowned demonologists Lorraine and Ed Warren travel to north
+                            London to help a single mother...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/anna.webp" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/anna.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1"
+                                onclick="playTrailer('trailer/annacomes.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Annabelle Comes Home</span>
+                        <div class="movie-time">
+                            <span class="year1">2019</span>
+                            <span class="hour">1 h 41 min</span>
+                            <span class="UA">U/A 16+</span>
+                        </div>
+                        <span class="about-movie-video">Demonologists Ed and Lorraine Warren kept Annabelle in the
+                            locked artifacts room, "safely" behind...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/bhoot.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/bhoot.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/bhoot.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Bhoot Part One</span>
+                        <div class="movie-time">
+                            <span class="year1">2020</span>
+                            <span class="hour">1 h 54 min</span>
+                            <span class="UA">U/A 16+</span>
+                        </div>
+                        <span class="about-movie-video">
+                            In June 2012, A huge, dead, unmanned ship-“Sea Bird”, on its way to a shipyard, broke its
+                            ties and ran...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/anna-cre.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/anna-cre.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1"
+                                onclick="playTrailer('trailer/annacrea.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Annabelle: Creation</span>
+                        <div class="movie-time">
+                            <span class="year1">2017</span>
+                            <span class="hour">1 h 49 min</span>
+                            <span class="UA">U/A 13+</span>
+                        </div>
+                        <span class="about-movie-video">A nun and six orphaned girls become the target of a former toy
+                            maker's possessed doll....</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sections">
+        <span class="trending">Award Winners</span>
+        <div class="box">
+            <div class="card">
+                <img src="images/wolf.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/wolf.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/wolf.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">The Wolf of Wall Street</span>
+                        <div class="movie-time">
+                            <span class="year1">2013</span>
+                            <span class="hour">2 h 49 min</span>
+                            <span class="UA">U/A 16+</span>
+                        </div>
+                        <span class="about-movie-video">
+                            Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living
+                            the high life to...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/joker.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/joker.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/joker.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Joker</span>
+                        <div class="movie-time">
+                            <span class="year1">2019</span>
+                            <span class="hour">2 h 1 min</span>
+                            <span class="UA">U/A 13+</span>
+                        </div>
+                        <span class="about-movie-video">Todd Phillips helms a gritty origin story starring Joaquin
+                            Phoenix and Robert De Niro that centers around...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/sardar.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/sardar.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/sardar.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">Sardar Udham</span>
+                        <div class="movie-time">
+                            <span class="year1">2021</span>
+                            <span class="hour">2 h 42 min</span>
+                            <span class="UA">U/A 13+</span>
+                        </div>
+                        <span class="about-movie-video">
+                            A young Sardar Udham was left deeply scarred by the Jallianwala Bagh massacre. He escaped
+                            into the...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/war.jpg" id="movie_thumb">
+                <div class="movie-popup">
+                    <video src="videos_short/war.mp4" autoplay muted loop id="video-popup"></video>
+                    <div class="movie-info">
+                        <div class="play_btn1">
+                            <i class="fa fa-duotone fa-play" id="play1" onclick="playTrailer('trailer/war.mp4')"></i>
+                            <span class="play_trailer1">Play Trailer</span>
+                        </div>
+                        <span class="title-movie">War (Hindi)</span>
+                        <div class="movie-time">
+                            <span class="year1">2019</span>
+                            <span class="hour">2 h 31 min</span>
+                            <span class="UA">U/A 16+</span>
+                        </div>
+                        <span class="about-movie-video">
+                            An elite shadow unit of R&AW led by agent Kabir (Hrithik Roshan) focusses on maximum risk
+                            missions. Khalid...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="foot">
+            <div class="logo1">
+                <span class="logo">MovieManiax</span>
+            </div>
+            <h1 class="made">Made with ❤️ by,</h1>
+            <h1 class="made1">Hanish Tharwani</h1>
+        </div>
+        <div class="social">
+            <a href="https://github.com/hanishtharwani123" class="link"><i class="fa-brands fa-github"
+                    id="icons"></i></a>
+            <a href="https://twitter.com/TharwaniHanish" class="link"><i class="fa-brands fa-twitter"
+                    id="icons"></i></a>
+            <a href="https://www.linkedin.com/in/hanish-tharwani/" class="link"><i class="fa-brands fa-linkedin-in"
+                    id="icons"></i></i></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        let mode_name = document.querySelector('.mode-name')
+        let icon = document.getElementById("dark-mode");
+        let mode = document.querySelector('.mode')
+        mode.addEventListener('click', () => {
+            let white = document.body.classList.toggle('dark_theme');
+            if (document.body.classList.contains('dark_theme')) {
+                mode_name.innerHTML = `Dark mode`;
+                icon.src = 'images/moon.png';
+            } else {
+                icon.src = 'images/sun.png';
+                mode_name.innerHTML = `Light mode`;
+            }
+        })
+    </script>
+</body>
+
+</html>
