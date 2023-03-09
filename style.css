@@ -193,14 +193,14 @@ nav {
 .year {
     font-size: 19px;
     font-weight: 600;
-    color: #fff;
+    color: var(--third-color);
     margin-left: 20px;
 }
 
 #play {
     font-size: 50px;
     color: var(--fifth-color);
-    background: var(--third-color);
+    background: #fff;
     border-radius: 58%;
     cursor: pointer;
     padding: 25px 30px;
