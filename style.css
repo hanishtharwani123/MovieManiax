@@ -152,13 +152,13 @@ nav {
 }
 
 .video_name {
-    color: #fff;
+    color: var(--third-color);
     font-weight: 600;
     font-size: 70px;
 }
 
 .video_about {
-    color: #fff;
+    color: var(--third-color);
     font-size: 20px;
     font-weight: 500;
     width: 695px;
@@ -167,7 +167,7 @@ nav {
 .fiction {
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
+    color: var(--third-color);
     letter-spacing: 0.6px;
     margin-top: 8px;
 }
@@ -186,7 +186,7 @@ nav {
 .time {
     font-size: 19px;
     font-weight: 600;
-    color: #fff;
+    color: var(--third-color);
     margin-left: 20px;
 }
 
@@ -200,7 +200,7 @@ nav {
 #play {
     font-size: 50px;
     color: var(--fifth-color);
-    background: #fff;
+    background: var(--third-color);
     border-radius: 58%;
     cursor: pointer;
     padding: 25px 30px;
@@ -213,7 +213,7 @@ nav {
 
 .play_trailer {
     font-size: 48px;
-    color: #fff;
+    color: var(--third-color);
     font-weight: 600;
     margin: 10px;
 }
