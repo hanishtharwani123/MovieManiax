@@ -1,7 +1,6 @@
 # MovieManiax
-Hello everyone, so Guyz I have created a new project called "moviemaniax" , which is a movie trailer website, on which you will be able to watch trailers of some selected movies, this website has![Screenshot (809)](https://user-images.githubusercontent.com/104623869/223699896-0ec9ec0b-1e0f-400c-8eb5-12b299502859.png)![Screenshot (810)](https://user-images.githubusercontent.com/104623869/223699906-1dbe0236-ff21-4693-9b3d-44d658630460.png)
-
- been created using HTML, CSS and JavaScript without using any API. I hope you like it.
+Hello everyone, so Guyz I have created a new project called "moviemaniax" , which is a movie trailer website, on which you will be able to watch trailers of some selected movies, this website has  been created using HTML, CSS and JavaScript without using any API. I hope you like it.
+![Screenshot (809)](https://user-images.githubusercontent.com/104623869/223699896-0ec9ec0b-1e0f-400c-8eb5-12b299502859.png)![Screenshot (810)](https://user-images.githubusercontent.com/104623869/223699906-1dbe0236-ff21-4693-9b3d-44d658630460.png)
 ![Screenshot (811)](https://user-images.githubusercontent.com/104623869/223699650-4507905c-2215-413e-ad4e-f05c51fe88b1.png)
 ![Screenshot (812)](https://user-images.githubusercontent.com/104623869/223699651-a2b6c18f-fe51-40db-8361-8be22a8d7a89.png)
 ![Screenshot (813)](https://user-images.githubusercontent.com/104623869/223699658-a49b3b72-7161-4b4b-87df-e8c20b5c813b.png)
